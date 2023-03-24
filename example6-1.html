@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example 6-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default6.css" />
+  </head>
+
+  <body>
+
+    <h2>Click to see SOORE spin!❤️‍🔥❤️‍🔥</h2>
+    <div id="div1">
+    </div>
+
+    <script>
+      
+      let division = document.querySelector("#div1");
+      division.addEventListener("click", (e) => {
+        if (division.id == "div1"){
+          division.id = "photo";
+          division.classList.add("animation");
+        }
+        else {
+          division.id = "div1"
+          division.classList.remove("animation")
+        }
+      });
+    </script>
+  </body>
+</html>

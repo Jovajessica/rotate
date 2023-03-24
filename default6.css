@@ -1,0 +1,54 @@
+h1,
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+body {
+  background: radial-gradient(
+    circle farthest-corner at 92.3% 71.5%,
+    rgb(239, 160, 222) 0%,
+    rgb(209, 99, 99) 90%
+  );
+}
+#div1 {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 2em;
+  background-color: rgb(213, 112, 229);
+  color: #ffffff;
+  width: 50%;
+  height: 500px;
+}
+
+
+
+#photo {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.5em;
+  background-color: rgb(220, 62, 62);
+  text-align: center;
+  color: #ffffff;
+  width: 50%;
+  height: 500px;
+  background-image: url(fattig.jpg);
+  background-size: cover;
+
+}
+
+@keyframes myAnimation{
+  0%   {transform:translate(50px,50px) rotate(20deg)}
+  15%  {transform:translate(10px,10px) rotate(200deg)}
+  25%  {transform:translate(200px,10px) rotate(800deg)}
+  50%  {transform:translate(200px,160px) rotate(309deg)}
+  75%  {transform:translate(-100px,300px) rotate(10deg)}
+  100% {transform:translate(50px,50px) rotate(20deg)}
+}
+.animation{
+  animation-name: myAnimation;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
